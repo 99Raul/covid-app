@@ -1,0 +1,12 @@
+.container {
+	display: flex;
+	justify-content: center;
+	width: 85%;
+	background-color: whitesmoke;
+}
+
+@media (max-width: 770px) {
+	.container {
+		width: 100%;
+	}
+}
