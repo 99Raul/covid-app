@@ -7,12 +7,14 @@ import { fetchData } from './api/api';
 import Maps from './Maps';
 import covidImage from './images/covid.png';
 
+// Hou comment: As a follow-up challenge, you might want to refactor this class component to use functional component + Hooks
 export default class App extends Component {
 	state = {
 		data: {},
 		country: '',
 	};
 
+	// Hou comment: nice job implementing async await. What do you like about this pattern?
 	async componentDidMount() {
 		const fetchedData = await fetchData();
 
@@ -25,7 +27,8 @@ export default class App extends Component {
 		const fetchedData = await fetchData(country);
 
 		this.setState({ data: fetchedData, country: country });
-
+		
+		// Hou comment: make sure to delete any lingering console.log's from all your files
 		console.log(fetchedData);
 	};
 
