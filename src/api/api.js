@@ -1,3 +1,4 @@
+// Hou comment: such a smart idea to move your api calls into their own folder!
 import axios from 'axios';
 
 const url = 'https://covid19.mathdro.id/api';
@@ -8,7 +9,7 @@ export const fetchData = async (country) => {
 	if (country) {
 		changeableUrl = `${url}/countries/${country}`;
 	}
-
+	// Hou comment: Nice job implementing try/catch!
 	try {
 		const {
 			data: { confirmed, recovered, deaths, lastUpdate },

@@ -26,3 +26,5 @@ This data app tracker shows the numbers and trends of people affected, recovered
 [Novel-covid-api](https://documenter.getpostman.com/view/11144369/Szf6Z9B3?version=latest) - used to import data to map
 
 ![api-screenshot](screenshots/novel-api.png)
+
+<!-- How comment: where are your installation instructions? -->
